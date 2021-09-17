@@ -1,0 +1,7 @@
+[user]
+	name = George Sanger
+	email = paperclipstudio@gmail.com
+[core]
+	editor = nvim
+[init]
+	defaultBranch = main
