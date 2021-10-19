@@ -116,3 +116,5 @@ fi
 export PS1="\[\033[38;5;46m\]\t\[$(tput sgr0)\] \w\n>\[$(tput sgr0)\]"
 
 alias vim=nvim
+
+alias sail=vendor/bin/sail
