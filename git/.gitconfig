@@ -3,5 +3,6 @@
 	email = paperclipstudio@gmail.com
 [core]
 	editor = nvim
+	autocrlf = true
 [init]
 	defaultBranch = main
