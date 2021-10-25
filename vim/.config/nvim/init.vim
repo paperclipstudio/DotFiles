@@ -43,6 +43,15 @@ set t_vb=
 syntax enable
 filetype plugin indent on
 
+" NERDTREE
+" Open with control F
+nmap <C-f> :NERDTreeToggle<CR>
+" Open nerdtree when opening a file
+autocmd VimEnter * NERDTree
+" Close if the only thing open is NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+
 " Set completeopt to have a better completion experience
 " :help completeopt
 " menuone: popup even when there's only one match
