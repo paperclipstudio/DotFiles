@@ -1,5 +1,4 @@
-source ~/.config/nvim/general/remapping.vim
-source ~/.config/nvim/general/settings.vim
+source ./general/remapping.vim
 
 
 call plug#begin('~/.vim/plugged')
@@ -39,12 +38,19 @@ call plug#end()
 set background=dark
 colorscheme gruvbox
 
+set relativenumber
+set number
+set vb
+set t_vb=
+
 syntax enable
 filetype plugin indent on
 
 " NERDTREE
 " Open with control F
 nmap <C-f> :NERDTreeToggle<CR>
+" Open nerdtree when opening a file
+autocmd VimEnter * NERDTree
 " Close if the only thing open is NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
@@ -90,3 +96,15 @@ local opts = {
 
 require('rust-tools').setup(opts)
 EOF
+
+" Set tab width to 2 columns
+set tabstop=2
+" Use 2 columns for indentation
+set shiftwidth=2
+" Use spaces when pressing <tab> key
+set expandtab
+set wildmenu
+set lazyredraw
+set scrolloff=15
+set mouse=a
+set nowrap
