@@ -120,3 +120,6 @@ export PS1="\[\033[38;5;46m\]\t\[$(tput sgr0)\] \w\n>\[$(tput sgr0)\]"
 alias vim=nvim
 
 alias sail=vendor/bin/sail
+
+source /usr/share/doc/fzf/examples/key-bindings.bash
+source /usr/share/doc/fzf/examples/completion.bash
