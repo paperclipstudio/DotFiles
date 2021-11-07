@@ -121,5 +121,7 @@ alias vim=nvim
 
 alias sail=vendor/bin/sail
 
+alias cdwin="cd /mnt/c/Users/paper/Git/"
+
 source /usr/share/doc/fzf/examples/key-bindings.bash
 source /usr/share/doc/fzf/examples/completion.bash
