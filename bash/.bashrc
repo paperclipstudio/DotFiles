@@ -76,8 +76,8 @@ esac
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='exa --long --header --git'
-    alias la='exa --long --header --git -a'
+    alias ls='exa --long --header '
+    alias la='exa --long --header -a'
     alias dir='dir --color=auto'
     alias vdir='vdir --color=auto'
 
@@ -125,3 +125,10 @@ alias cdwin="cd /mnt/c/Users/paper/Git/"
 
 source /usr/share/doc/fzf/examples/key-bindings.bash
 source /usr/share/doc/fzf/examples/completion.bash
+. "$HOME/.cargo/env"
+
+[ -f "/home/pcm/.ghcup/env" ] && source "/home/pcm/.ghcup/env" # ghcup-env
+
+
+# Set the port for good_soup dev server
+export ROCKET_PORT=8000
